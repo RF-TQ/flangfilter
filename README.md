@@ -1,7 +1,15 @@
 # flangfilter
 To run:
 
-Just compile the three files together.
+Just compile the three files together. For completeness's sake:
+
+* **Windows** users: 
+In Visual Studio, right-click in the Solution Explorer to include the existing code in a blank C++ project. For organization's sake, put the header under the Header Files, and the code under the Source Files. Build / compile from the **Build** menu in the top bar, and run from the "Run without debugging" in the **Debug** menu.
+* **Linux** users: `g++ *.cpp -c` (or `clang++`, if that's what you have), then link them together with `g++ *.o -o <insert your executable name here>`; then `./<name of executable>`
+* **Mac** users: Assuming you've got Xcode or similar running, the same build / run commands for Linux should work without too much fuss on the command line tool.
+
+Please at least remember to run these commands in the same directory as where the files are kept.
+
 You'll want to edit `flang.cpp`, which contains the name of the target `inputFile` to read from, and `outputFile`, which it'll create.
 
 Some things to keep in mind: 
