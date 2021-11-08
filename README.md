@@ -5,7 +5,7 @@ Just compile the three files together. For completeness's sake:
 
 * **Windows** users: 
 In Visual Studio, right-click in the Solution Explorer to include the existing code in a blank C++ project. For organization's sake, put the header under the Header Files, and the code under the Source Files. Build / compile from the **Build** menu in the top bar, and run from the "Run without debugging" in the **Debug** menu.
-* **Linux** users: `g++ *.cpp -c` (or `clang++`, if that's what you have), then link them together with `g++ *.o -o <insert your executable name here>`; then `./<name of executable>`
+* **Linux** users: `g++ *.cpp -c` (or `clang++`, if that's what you have), then link them together with `g++ *.o -o <insert your executable name here>`; then run with `./<name of executable>`. (You could compile everything separately to prevent whatever other code you have from getting caught in the * wildcard crossfire, but best practice suggests you really should keep separate projects of code in different folders to begin with.)
 * **Mac** users: Assuming you've got Xcode or similar running, the same build / run commands for Linux should work without too much fuss on the command line tool.
 
 Please at least remember to run these commands in the same directory as where the files are kept.
